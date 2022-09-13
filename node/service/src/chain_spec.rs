@@ -1948,9 +1948,9 @@ fn wococo_local_testnet_genesis(wasm_binary: &[u8]) -> westend::GenesisConfig {
 /// Wococo local testnet config (multivalidator Alice + Bob + Charlie + Dave)
 #[cfg(feature = "westend-native")]
 pub fn wococo_local_testnet_config() -> Result<WestendChainSpec, String> {
-	let wasm_binary = rococo::WASM_BINARY.ok_or("Wococo development wasm not available")?;
+	let wasm_binary = westend::WASM_BINARY.ok_or("Wococo development wasm not available")?;
 
-	Ok(RococoChainSpec::from_genesis(
+	Ok(WestendChainSpec::from_genesis(
 		"Wococo Local Testnet",
 		"wococo_local_testnet",
 		ChainType::Local,
