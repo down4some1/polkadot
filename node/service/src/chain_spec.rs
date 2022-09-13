@@ -1954,7 +1954,7 @@ pub fn wococo_local_testnet_config() -> Result<WestendChainSpec, String> {
 		"Wococo Local Testnet",
 		"wococo_local_testnet",
 		ChainType::Local,
-		move || westend_local_testnet_genesis(wasm_binary),
+		move || wococo_local_testnet_genesis(wasm_binary),
 		vec![],
 		None,
 		Some(DEFAULT_PROTOCOL_ID),
