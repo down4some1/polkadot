@@ -7,60 +7,60 @@ rust-version = "1.60"
 
 [dependencies]
 # Substrate Client
-sc-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "master" }
-babe = { package = "sc-consensus-babe", git = "https://github.com/paritytech/substrate", branch = "master" }
-beefy-primitives = { git = "https://github.com/paritytech/substrate", branch = "master" }
-beefy-gadget = { git = "https://github.com/paritytech/substrate", branch = "master" }
-frame-support = { git = "https://github.com/paritytech/substrate", branch = "master" }
-grandpa = { package = "sc-finality-grandpa", git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-chain-spec = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-client-db = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-consensus-slots = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-executor = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-network = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-network-common = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-sync-state-rpc = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-keystore = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-offchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sc-sysinfo = { git = "https://github.com/paritytech/substrate", branch = "master" }
-service = { package = "sc-service", git = "https://github.com/paritytech/substrate", branch = "master", default-features = false }
-telemetry = { package = "sc-telemetry", git = "https://github.com/paritytech/substrate", branch = "master" }
+sc-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+babe = { package = "sc-consensus-babe", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+beefy-primitives = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+beefy-gadget = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+frame-support = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+grandpa = { package = "sc-finality-grandpa", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-block-builder = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-chain-spec = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-client-db = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-consensus-slots = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-executor = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-network = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-network-common = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-sync-state-rpc = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-keystore = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-offchain = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sc-sysinfo = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+service = { package = "sc-service", git = "https://github.com/paritytech/substrate", default-features = false , branch = "oty-fix-scheduler-migration" }
+telemetry = { package = "sc-telemetry", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
 
 # Substrate Primitives
-sp-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "master" }
-consensus_common = { package = "sp-consensus", git = "https://github.com/paritytech/substrate", branch = "master" }
-grandpa_primitives = { package = "sp-finality-grandpa", git = "https://github.com/paritytech/substrate", branch = "master" }
-inherents = { package = "sp-inherents", git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-offchain = { package = "sp-offchain", git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-session = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-storage = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-trie = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "master" }
-sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "master" }
+sp-authority-discovery = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+consensus_common = { package = "sp-consensus", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+grandpa_primitives = { package = "sp-finality-grandpa", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+inherents = { package = "sp-inherents", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-api = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-block-builder = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-blockchain = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-core = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-io = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-keystore = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-offchain = { package = "sp-offchain", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-session = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-storage = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-trie = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-consensus-babe = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+sp-state-machine = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
 
 # Substrate Pallets
-pallet-babe = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-im-online = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-staking = { git = "https://github.com/paritytech/substrate", branch = "master" }
-pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
+pallet-babe = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+pallet-im-online = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+pallet-staking = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+pallet-transaction-payment-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
 
 # Substrate Other
-frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "master" }
-prometheus-endpoint = { package = "substrate-prometheus-endpoint", git = "https://github.com/paritytech/substrate", branch = "master" }
+frame-system-rpc-runtime-api = { git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
+prometheus-endpoint = { package = "substrate-prometheus-endpoint", git = "https://github.com/paritytech/substrate", branch = "oty-fix-scheduler-migration" }
 
 # External Crates
 futures = "0.3.21"
